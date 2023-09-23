@@ -7,11 +7,8 @@ public class Inventar : MonoBehaviour
 {
     public int anzahlReparatur=0;
     public Text textfield;
+    public GameObject Herzen;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -33,5 +30,4 @@ public class Inventar : MonoBehaviour
     {
         return anzahlReparatur;
     }
-    
 }
