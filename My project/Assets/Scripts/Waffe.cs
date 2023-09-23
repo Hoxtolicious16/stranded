@@ -13,14 +13,11 @@ public class Waffe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Console.KeyAvailable)
+        if (Input.GetKeyDown(KeyCode.Space));
         {
-            ConsoleKeyInfo keyInfo = Console.ReadKey(intercept: true);
-
-            if (keyInfo.Key == ConsoleKey.Spacebar)
             {
-                Console.WriteLine("Spacebar pressed")
-                        }
+                Debug.Log("Spacebar pressed!");
+             }
         }
     }
 }
