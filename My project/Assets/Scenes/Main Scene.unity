@@ -407,7 +407,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &638017696
@@ -474,9 +474,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5423786153383127320, guid: d3bd16fa9f1335d44a7eaa0b1b778254, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423786153383127320, guid: d3bd16fa9f1335d44a7eaa0b1b778254, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423786153383127320, guid: d3bd16fa9f1335d44a7eaa0b1b778254, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6459245947535826719, guid: d3bd16fa9f1335d44a7eaa0b1b778254, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 665053211}
     - target: {fileID: 6816467813452169556, guid: d3bd16fa9f1335d44a7eaa0b1b778254, type: 3}
       propertyPath: m_Name
       value: Spieler
@@ -486,6 +498,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3bd16fa9f1335d44a7eaa0b1b778254, type: 3}
+--- !u!95 &665053211 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4515302022429054628, guid: d3bd16fa9f1335d44a7eaa0b1b778254, type: 3}
+  m_PrefabInstance: {fileID: 651802718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1158701534
 GameObject:
   m_ObjectHideFlags: 0
