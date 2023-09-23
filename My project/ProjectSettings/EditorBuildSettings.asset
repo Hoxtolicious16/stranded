@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 6c38f3641ad7ed74c89c060c8c71f26d
+  - enabled: 1
+    path: Assets/Scenes/Main Scene.unity
+    guid: 9a924d3af554723459eef4b0f1df54dc
+  - enabled: 1
+    path: Assets/Scenes/Startbildschirm.unity
+    guid: ef1439ba3e509124bba70461575f45db
+  - enabled: 1
+    path: Assets/Scenes/GAMEPLAY SCENE!.unity
+    guid: 14e19f21d7cd65d48b061e647dd7d57e
+  - enabled: 1
+    path: Assets/Scenes/Charakterauswahl.unity
+    guid: ae6190e04a57c034fbc47eb3f28e4675
   m_configObjects: {}
