@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Aufsammeln : MonoBehaviour
+public class Repariere : MonoBehaviour
 {
-    // Start is called before the first frame update
     private bool isPlayerInRange=false;
     public GameObject Spieler;
+    public int fortschritt;
+    public Text textfield1;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
     void Update()
     {
         if(isPlayerInRange&&Input.GetButtonDown("Fire1"))
@@ -14,11 +23,12 @@ public class Aufsammeln : MonoBehaviour
             var Inventar = Spieler.GetComponent<Inventar>();
             if (Inventar!=null)
             {
-                Inventar.addReparaturTeil();
-                Destroy(gameObject);
+                Inventar.removeReparaturTeil();
+                fortschritt++;
             }
             
         }
+        textfield1.text=fortschritt.ToString();
     }
     void OnTriggerEnter2D(Collider2D col)
     {
