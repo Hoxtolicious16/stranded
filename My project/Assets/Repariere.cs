@@ -21,15 +21,15 @@ public class Repariere : MonoBehaviour
         if(isPlayerInRange&&Input.GetButtonDown("Fire1"))
         {
             var Inventar = Spieler.GetComponent<Inventar>();
-            if (Inventar!=null)
+            if (Inventar.gibAnzahl()>0)
             {
                 Inventar.removeReparaturTeil();
                 if(fortschritt<3)
                 {
                     fortschritt++;
                 }
-            }
-            
+                
+            }   
         }
         textfield1.text=fortschritt.ToString();
     }
