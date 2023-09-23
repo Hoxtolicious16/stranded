@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bewegen : MonoBehaviour
 {
     public float moveSpeed;  // Korrekte Schreibweise der Variablen
-    public float isMoving;
+    public bool isMoving;
 
     public Vector2 input;
 
