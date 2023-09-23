@@ -24,7 +24,10 @@ public class Repariere : MonoBehaviour
             if (Inventar!=null)
             {
                 Inventar.removeReparaturTeil();
-                fortschritt++;
+                if(fortschritt<3)
+                {
+                    fortschritt++;
+                }
             }
             
         }
