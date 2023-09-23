@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bewegen : MonoBehaviour
 {
+    public Animator animator;
     Rigidbody2D body;
 
     float horizontal;
@@ -34,5 +35,11 @@ public class Bewegen : MonoBehaviour
     } 
 
     body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+    }
+    void Animate()
+    {
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
+
     }
 }
