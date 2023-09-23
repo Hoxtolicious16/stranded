@@ -17,6 +17,9 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + (Vector3.right * MoveSpeed / 15);
+        if (Input.GetKeyDown(KeyCode.Space));
+        {
+            transform.position = transform.position + (Vector3.right * MoveSpeed / 15);
+        }
     }
 }
