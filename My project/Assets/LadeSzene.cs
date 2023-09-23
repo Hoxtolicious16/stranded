@@ -14,5 +14,9 @@ public class LadeSzene : MonoBehaviour
     {
         SceneManager.LoadScene("Startbildschirm");
     }
+    public void Scem3
+    {
+        SceneManager.LoadScene("Charakterauswahl");
+    }
 }
 
