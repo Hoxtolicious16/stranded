@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Waffe : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Console.KeyAvailable)
+        {
+            ConsoleKeyInfo keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key == ConsoleKey.Spacebar)
+            {
+                Console.WriteLine("Spacebar pressed")
+                        }
+        }
+    }
+}
