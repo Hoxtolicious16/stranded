@@ -9,10 +9,11 @@ public class OnCollisionDestroy : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Gegner")) // Adjust the tag as needed.
+        {
+            Destroy(gameObject);
+        }
     }
 }
