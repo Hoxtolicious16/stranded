@@ -9,10 +9,11 @@ public class Repariere : MonoBehaviour
     public GameObject Spieler;
     public int fortschritt;
     public Text textfield1;
+    public GameObject RepariertShip;
     // Start is called before the first frame update
     void Start()
     {
-        
+        RepariertShip.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,10 +22,25 @@ public class Repariere : MonoBehaviour
         if(isPlayerInRange&&Input.GetButtonDown("Fire1"))
         {
             var Inventar = Spieler.GetComponent<Inventar>();
-            if (Inventar!=null)
+            if (Inventar.gibAnzahl()>0)
             {
                 Inventar.removeReparaturTeil();
-                fortschritt++;
+                if(fortschritt<3)
+                {
+                    fortschritt++;
+                }
+            }
+            if(fortschritt==3)
+            {
+                //aendere die Grafik
+                //warte
+                //gebe den Siegesbildschirm aus
+                // gehe zum Startbildschirm
+               RepariertShip.SetActive(true);
+            }
+            else
+            {
+                RepariertShip.SetActive(false);
             }
             
         }
