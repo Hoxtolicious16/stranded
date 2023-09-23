@@ -132,6 +132,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 537182586}
     m_Modifications:
     - target: {fileID: -8395374284032121639, guid: 1f83efae157681d4b9e6bd261a3e65fc, type: 3}
+      propertyPath: Spieler
+      value: 
+      objectReference: {fileID: 949055166}
+    - target: {fileID: -8395374284032121639, guid: 1f83efae157681d4b9e6bd261a3e65fc, type: 3}
       propertyPath: ReparaturTeil
       value: 
       objectReference: {fileID: 0}
@@ -657,6 +661,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 537182586}
     m_Modifications:
     - target: {fileID: -8395374284032121639, guid: 1f83efae157681d4b9e6bd261a3e65fc, type: 3}
+      propertyPath: Spieler
+      value: 
+      objectReference: {fileID: 949055166}
+    - target: {fileID: -8395374284032121639, guid: 1f83efae157681d4b9e6bd261a3e65fc, type: 3}
       propertyPath: ReparaturTeil
       value: 
       objectReference: {fileID: 0}
@@ -842,6 +850,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784396884}
   m_CullTransparentMesh: 1
+--- !u!1001 &949055165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02072502
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545169363669666271, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: m_Name
+      value: Spieler 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+--- !u!1 &949055166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4545169363669666271, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+  m_PrefabInstance: {fileID: 949055165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1240378347
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +988,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 537182586}
     m_Modifications:
+    - target: {fileID: -8395374284032121639, guid: 1f83efae157681d4b9e6bd261a3e65fc, type: 3}
+      propertyPath: Spieler
+      value: 
+      objectReference: {fileID: 949055166}
     - target: {fileID: -8395374284032121639, guid: 1f83efae157681d4b9e6bd261a3e65fc, type: 3}
       propertyPath: ReparaturTeil
       value: 
@@ -1290,7 +1364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5617823992bb1434aa25567d2c552873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spieler: {fileID: 0}
 --- !u!212 &1479569664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2277,6 +2350,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 949055165}
   - {fileID: 1728512838}
   - {fileID: 1479569665}
   - {fileID: 2122025040}
