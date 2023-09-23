@@ -12,7 +12,7 @@ public class Aufsammeln : MonoBehaviour
     {
         if(isPlayerInRange&&Input.GetButtonDown("Fire1"))
         {
-            Destroy(gameObject);
+            Destroy(rT);
         }
     }
     void OnTriggerEnter2D(Collider2D col)
