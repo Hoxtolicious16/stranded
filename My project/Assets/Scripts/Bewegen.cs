@@ -40,6 +40,6 @@ public class Bewegen : MonoBehaviour
     {
         animator.SetFloat("Horizontal", horizontal);
         animator.SetFloat("Vertical", vertical);
-
+        animator.SetFloat("Speed", runSpeed);
     }
 }
