@@ -17,7 +17,6 @@ public class ShootScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -27,7 +26,7 @@ public class ShootScript : MonoBehaviour
         direction = mousePos - (Vector2)Gun.position;
         FaceMouse();
 
-        if(Input.getmouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
             shoot();
         }
@@ -39,8 +38,8 @@ public class ShootScript : MonoBehaviour
     }
     void shoot()
     {
-        GameObject BulletIns = Instantiate(Bullet,ShootPoint.position,shootPoint.rotation);
-    BulletIns.GetComponent<Ridgidbody2D>().AddForce(BulletIns.transform.right * BulletSpeed);
+        GameObject BulletIns = Instantiate(Bullet,ShootPoint.position,ShootPoint.rotation);
+        BulletIns.GetComponent<Rigidbody2D>().AddForce(BulletIns.transform.right * BulletSpeed);
     }
 }
 
