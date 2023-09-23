@@ -19,7 +19,7 @@ public class Kampf : MonoBehaviour
         if(col.gameObject.tag=="Player")
         {
             var HUD = col.gameObject.GetComponent<SteuerHerz>();
-            Debug.Log("DAmage");
+            Debug.Log("Damage");
             HUD.takeDamage();
         }
         if(col.gameObject.name=="BulletObject")
