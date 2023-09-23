@@ -33,4 +33,8 @@ public class Inventar : MonoBehaviour
     {
         return anzahlReparatur;
     }
+    public void takeDamage()
+    {
+        
+    }
 }
