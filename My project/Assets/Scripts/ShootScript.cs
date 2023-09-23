@@ -29,6 +29,8 @@ public class ShootScript : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             shoot();
+            if (collisionInfo.collider.tag == "Gegener")
+                Destroy(collisionInfo.GameObject, 5f);
         }
     }
 
@@ -40,6 +42,7 @@ public class ShootScript : MonoBehaviour
     {
         GameObject BulletIns = Instantiate(Bullet,ShootPoint.position,ShootPoint.rotation);
         BulletIns.GetComponent<Rigidbody2D>().AddForce(BulletIns.transform.right * BulletSpeed);
+    
     }
 }
 
