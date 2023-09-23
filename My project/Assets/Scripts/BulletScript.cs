@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
+    private float moveSpeed = 1;
+
+    public global::System.Single MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
+
     // Start is called before the first frame update
-    public float moveSpeed = 1;
     void Start()
     {
         
@@ -14,6 +17,6 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + (Vector3.left + moveSpeed);
+        transform.position = transform.position + (Vector3.right * MoveSpeed / 15);
     }
 }

@@ -15,9 +15,7 @@ public class Waffe : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space));
         {
-            {
-                Debug.Log("Spacebar pressed!");
-             }
+            Debug.Log("Spacebar pressed!");
         }
     }
 }
