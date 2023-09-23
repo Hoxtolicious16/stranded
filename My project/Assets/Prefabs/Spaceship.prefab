@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba7db5d975d28f479a0ecdf1482b972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spieler: {fileID: 0}
+  Spieler: {fileID: 4545169363669666271, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
   fortschritt: 0
   textfield1: {fileID: 0}
+  RepariertShip: {fileID: 1784095492592597456}

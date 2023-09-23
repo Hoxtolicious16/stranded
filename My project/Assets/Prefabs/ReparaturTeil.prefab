@@ -171,4 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c45b8abe74217a8478eb52c3acd0318d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReparaturTeil: {fileID: 2484047132325885960}
+  Spieler: {fileID: 4545169363669666271, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}

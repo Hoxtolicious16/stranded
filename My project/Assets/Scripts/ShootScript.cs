@@ -29,8 +29,6 @@ public class ShootScript : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             shoot();
-            if (collisionInfo.collider.tag == "Gegener")
-                Destroy(collisionInfo.GameObject, 5f);
         }
     }
 
