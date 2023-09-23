@@ -15,6 +15,7 @@ public class CameraSwitch : MonoBehaviour
         {
             camera.enabled = true;
         }
+        if (collision.gameObject.name == "Spieler") ;
     }
     // Update is called once per frame
     void Update()

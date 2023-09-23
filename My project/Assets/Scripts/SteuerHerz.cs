@@ -10,17 +10,17 @@ public class SteuerHerz : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lp=herzen.Length-1;
+        lp=herzen.Length;
     }
 
     // Update is called once per frame
     public void takeDamage()
     {
-        if(lp==0)
+        lp--;
+        if (lp<=0)
         {
             SceneManager.LoadScene("GameOver");
         }
-        lp--;
         for(int i=0; i<herzen.Length; i++)
         {
             herzen[i].gameObject.SetActive(lp>i);
