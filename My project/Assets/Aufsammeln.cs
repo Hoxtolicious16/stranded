@@ -12,7 +12,6 @@ public class Aufsammeln : MonoBehaviour
     {
         if(isPlayerInRange&&Input.GetButtonDown("Fire1"))
         {
-            rT=gameObject; //Fehler
             Destroy(gameObject);
         }
     }
