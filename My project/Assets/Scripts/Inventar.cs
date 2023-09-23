@@ -29,4 +29,9 @@ public class Inventar : MonoBehaviour
             anzahlReparatur--;
         }
     }
+    public int gibAnzahl()
+    {
+        return anzahlReparatur;
+    }
+    
 }
