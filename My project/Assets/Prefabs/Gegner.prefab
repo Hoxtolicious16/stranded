@@ -274,6 +274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b88252930738a443a4af6ce6dfc7a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spieler: {fileID: 0}
+  Spieler: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
   speed: 1
   ZielUpdateDelay: 1

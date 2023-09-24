@@ -3,26 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Spawner : MonoBehaviour
 {
+    public int begrenzer = 15;
     [SerializeField]
     private GameObject enemy;
 
+    public Transform Spieler;
+
     [SerializeField]
     private float interval = 3f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    private float nextSpawn = 0;
     void Update()
     {
-        
-    }
-    private IEnumerator spawnEnemy(float interval, GameObject enemy) 
-    {
-        yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy,new Vector3(Random.Range(-5f,5),Random.Range(-3f,3f),0), Quaternion.identity);
-        StartCoroutine(spawnEnemy(interval, newEnemy));
+        if (begrenzer>0&&Time.time > nextSpawn)
+        {
+            begrenzer--;
+            nextSpawn = Time.time + interval;
+            GameObject newEnemy = Instantiate(enemy, transform.position, Quaternion.identity);
+            newEnemy.GetComponent<Gegner>().Spieler = Spieler;
+        }
     }
 }
