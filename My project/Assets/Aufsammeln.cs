@@ -5,17 +5,12 @@ using UnityEngine;
  public class Aufsammeln : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject ReparaturTeil;
     private bool isPlayerInRange=false;
-    GameObject rT= null;//Fehler
-    void Start(){}
     public GameObject Spieler;
     void Update()
     {
         if(isPlayerInRange&&Input.GetButtonDown("Fire1"))
         {
-            rT=gameObject; //Fehler
-            Destroy(gameObject);
             var Inventar = Spieler.GetComponent<Inventar>();
             if (Inventar!=null)
             {

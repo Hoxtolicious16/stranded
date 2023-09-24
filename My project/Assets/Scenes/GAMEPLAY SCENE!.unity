@@ -2285,6 +2285,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1865135575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7844203548489873873, guid: 7561a310f52c2cb438364e162ecc9b90, type: 3}
+  m_PrefabInstance: {fileID: 1620124891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1892185884 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 291366122573608361, guid: 7561a310f52c2cb438364e162ecc9b90, type: 3}
@@ -3135,6 +3140,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1473881245}
     - target: {fileID: 912356901314323686, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: Herzen
+      value: 
+      objectReference: {fileID: 1865135575}
+    - target: {fileID: 912356901314323686, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
       propertyPath: textfield
       value: 
       objectReference: {fileID: 1594206386}
@@ -3145,7 +3154,7 @@ PrefabInstance:
     - target: {fileID: 912356901314323686, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
       propertyPath: textfieldR
       value: 
-      objectReference: {fileID: 784396886}
+      objectReference: {fileID: 1594206386}
     - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09975063

@@ -17,10 +17,11 @@ public class Inventar : MonoBehaviour
     void Update()
     {
         textfieldR.text=anzahlReparatur.ToString();
-        textfieldB.text=anzahlBeeren.ToString();
+        //textfieldB.text=anzahlBeeren.ToString();
     }
     public void addReparaturTeil()
     {
+        Debug.Log("add");
         anzahlReparatur++;
     }
     public void removeReparaturTeil()
