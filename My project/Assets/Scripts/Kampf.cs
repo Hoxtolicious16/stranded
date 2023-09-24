@@ -13,6 +13,7 @@ public class Kampf : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
     }
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -22,7 +23,7 @@ public class Kampf : MonoBehaviour
             Debug.Log("Damage");
             HUD.takeDamage();
         }
-        if(col.gameObject.name=="BulletObject")
+        if(col.gameObject.name=="Bullet32x32")
         {
             Destroy(gameObject);
         }
