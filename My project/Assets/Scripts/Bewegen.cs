@@ -4,38 +4,54 @@ using UnityEngine;
 
 public class Bewegen : MonoBehaviour
 {
+<<<<<<< Updated upstream:My project/Assets/Scripts/Bewegen.cs
     public Animator animator;
     Rigidbody2D body;
+=======
+    public float moveSpeed;
+    public float isMoving;
+>>>>>>> Stashed changes:My project/Assets/Bewegen.cs
 
-    float horizontal;
-    float vertical;
-    float moveLimiter = 0.7f;
+    private Vector2 input;  // Änderung: input als Vector2
 
-    public float runSpeed = 20.0f;
-
-    void Start ()
+    private void Update()
     {
-    body = GetComponent<Rigidbody2D>();
+        if (isMoving == 0)  // Änderung: Vergleichsoperator angepasst
+        {
+            input.x = Input.GetAxisRaw("Horizontal");
+            input.y = Input.GetAxisRaw("Vertical");
+
+            if (input.magnitude > 0)  // Änderung: Prüfen, ob Eingaben vorhanden sind
+            {
+                var targetPos = transform.position;  // Änderung: Variable als Vector2
+                targetPos.x += input.x;
+                targetPos.y += input.y;
+
+                StartCoroutine(Move(targetPos));
+            }
+        }
     }
 
-    void Update()
+    IEnumerator Move(Vector2 targetPos)  // Änderung: Parameter als Vector2
     {
+<<<<<<< Updated upstream:My project/Assets/Scripts/Bewegen.cs
     // Gives a value between -1 and 1
     horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
     vertical = Input.GetAxisRaw("Vertical"); // -1 is down
         Animate();
     }
+=======
+        isMoving = 1;  // Änderung: Wert als float gesetzt
+>>>>>>> Stashed changes:My project/Assets/Bewegen.cs
 
-    void FixedUpdate()
-    {
-    if (horizontal != 0 && vertical != 0) // Check for diagonal movement
-    {
-        // limit movement speed diagonally, so you move at 70% speed
-        horizontal *= moveLimiter;
-        vertical *= moveLimiter;
-    } 
+        while ((targetPos - (Vector2)transform.position).sqrMagnitude > Mathf.Epsilon)  // Änderung: Vector2 und sqrMagnitude korrekt verwendet
+        {
+            transform.position = Vector2.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);  // Änderung: Vector2.MoveTowards verwendet
+            yield return null;
+        }
+        transform.position = targetPos;
 
-    body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        isMoving = 0;  // Änderung: Wert als float gesetzt
     }
     void Animate()
     {
