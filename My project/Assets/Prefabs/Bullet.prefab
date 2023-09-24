@@ -8,20 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream:My project/Assets/Prefabs/Bullet.prefab
   - component: {fileID: 4180446107244300636}
   - component: {fileID: 1342954818554608267}
   - component: {fileID: 7499207996379414855}
   - component: {fileID: 4272812556328398177}
   - component: {fileID: 3470540515965709775}
-=======
-  - component: {fileID: 4721840955163809217}
-  - component: {fileID: 5423786153383127320}
-  - component: {fileID: 6459245947535826719}
-  - component: {fileID: 1810468636993057847}
-  - component: {fileID: 6296027604597424044}
-  - component: {fileID: 2056907942032296928}
->>>>>>> Stashed changes:My project/Assets/Scenes/Spieler.prefab
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -102,25 +93,7 @@ CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:My project/Assets/Prefabs/Bullet.prefab
   m_GameObject: {fileID: 7071515156250224171}
-=======
-  m_GameObject: {fileID: 6816467813452169556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a2bacb8cf37aa64f9973225c0d17e68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0
-  isMoving: 0
---- !u!70 &1810468636993057847
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6816467813452169556}
->>>>>>> Stashed changes:My project/Assets/Scenes/Spieler.prefab
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -175,32 +148,16 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-<<<<<<< Updated upstream:My project/Assets/Prefabs/Bullet.prefab
   m_Constraints: 4
 --- !u!114 &3470540515965709775
-=======
-  m_Constraints: 0
---- !u!114 &2056907942032296928
->>>>>>> Stashed changes:My project/Assets/Scenes/Spieler.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:My project/Assets/Prefabs/Bullet.prefab
   m_GameObject: {fileID: 7071515156250224171}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a4541577b3eb2f49bf0de6cca83a9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
-  m_GameObject: {fileID: 6816467813452169556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a2bacb8cf37aa64f9973225c0d17e68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0
-  isMoving: 0
->>>>>>> Stashed changes:My project/Assets/Scenes/Spieler.prefab
