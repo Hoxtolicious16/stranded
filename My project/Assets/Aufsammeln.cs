@@ -8,7 +8,7 @@ using UnityEngine;
     public GameObject ReparaturTeil;
     private bool isPlayerInRange=false;
     GameObject rT= null;//Fehler
-    void Start()
+    void Start(){}
     public GameObject Spieler;
     void Update()
     {
@@ -26,7 +26,7 @@ using UnityEngine;
         }
     }
     void OnTriggerEnter2D(Collider2D col)
-
+    {
         if(col.gameObject.name=="Spieler")
         {
             isPlayerInRange=true;
@@ -34,6 +34,7 @@ using UnityEngine;
         }
     }
     void OnTriggerExit2D(Collider2D col)
+    {
         if(col.gameObject.name=="Spieler")
         {
             isPlayerInRange=false;
