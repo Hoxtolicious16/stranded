@@ -15,8 +15,9 @@ public class Gegner : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Gegner")
+        if (collision.gameObject.tag == "bullet")
         {   
+            Destroy(gameObject);
             Destroy(collision.gameObject);
         }
     }
