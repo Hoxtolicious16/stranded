@@ -2829,6 +2829,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2008625863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4545169363669666271, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+  m_PrefabInstance: {fileID: 2145612851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2014705316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2924,7 +2929,7 @@ PrefabInstance:
     - target: {fileID: 9187629544215836645, guid: ac8c7a61b50be1843924407f0f63e4bf, type: 3}
       propertyPath: Spieler
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2008625863}
     - target: {fileID: 9187629544215836645, guid: ac8c7a61b50be1843924407f0f63e4bf, type: 3}
       propertyPath: textfield1
       value: 
@@ -3094,6 +3099,14 @@ PrefabInstance:
       propertyPath: textfield
       value: 
       objectReference: {fileID: 1594206386}
+    - target: {fileID: 912356901314323686, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: textfieldB
+      value: 
+      objectReference: {fileID: 1594206386}
+    - target: {fileID: 912356901314323686, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
+      propertyPath: textfieldR
+      value: 
+      objectReference: {fileID: 784396886}
     - target: {fileID: 1915390417623008389, guid: 3d85044f1cc6897439540ab528f9847a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09975063
