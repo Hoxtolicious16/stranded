@@ -90,7 +90,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 309fe6962e7eff34ab439b7114a87d99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -314,6 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anzahlReparatur: 0
   textfield: {fileID: 0}
+  Herzen: {fileID: 0}
 --- !u!114 &650818154291815488
 MonoBehaviour:
   m_ObjectHideFlags: 0

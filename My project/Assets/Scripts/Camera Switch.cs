@@ -13,9 +13,10 @@ public class CameraSwitch : MonoBehaviour
     {
         if (collision.gameObject.name == "Spieler")
         {
+            Debug.Log($"Switch camera {camera.name}");
+            Camera.main.enabled = false;
             camera.enabled = true;
         }
-        if (collision.gameObject.name == "Spieler") ;
     }
     // Update is called once per frame
     void Update()
