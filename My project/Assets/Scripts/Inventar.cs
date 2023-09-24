@@ -6,14 +6,18 @@ using UnityEngine.UI;
 public class Inventar : MonoBehaviour
 {
     public int anzahlReparatur=0;
-    public Text textfield;
+
+    public int anzahlBeeren =0;
+    public Text textfieldB;
+    public Text textfieldR;
     public GameObject Herzen;
     // Start is called before the first frame update
 
     // Update is called once per frame
     void Update()
     {
-        textfield.text=anzahlReparatur.ToString();
+        textfieldR.text=anzahlReparatur.ToString();
+        textfieldB.text=anzahlBeeren.ToString();
     }
     public void addReparaturTeil()
     {
@@ -26,8 +30,23 @@ public class Inventar : MonoBehaviour
             anzahlReparatur--;
         }
     }
-    public int gibAnzahl()
+    public void addBeeren()
+    {
+        anzahlBeeren++;
+    }
+    public void removeBeeren()
+    {
+        if(anzahlBeeren>0)
+        {
+            anzahlBeeren--;
+        }
+    }
+    public int gibAnzahlR()
     {
         return anzahlReparatur;
+    }
+    public int gibAnzahlB()
+    {
+        return anzahlBeeren;
     }
 }
