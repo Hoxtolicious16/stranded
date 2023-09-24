@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraSwitch : MonoBehaviour
 {
-    public Camera camera;
+    public Camera gamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +13,9 @@ public class CameraSwitch : MonoBehaviour
     {
         if (collision.gameObject.name == "Spieler")
         {
-            Debug.Log($"Switch camera {camera.name}");
+            Debug.Log($"Switch camera {gamera.name}");
             Camera.main.enabled = false;
-            camera.enabled = true;
+            gamera.enabled = true;
         }
     }
     // Update is called once per frame

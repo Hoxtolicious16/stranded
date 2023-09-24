@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3470540515965709775}
   m_Layer: 0
   m_Name: Bullet32x32
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7071515156250224171}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a4541577b3eb2f49bf0de6cca83a9ce, type: 3}
   m_Name: 
