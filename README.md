@@ -1,2 +1,2 @@
 # stranded
-.
+PIT Hackathon Game
